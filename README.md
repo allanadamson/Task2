@@ -53,9 +53,9 @@ Ava järgmine URL: https://allanadamson.github.io/Task2/src/task2/task2.html
 
 # AI Usage Disclosure
 
-## Kasutatud tööriist: Google Gemini
+### Kasutatud tööriist: Google Gemini
 
-##Kasutamise ulatus ja viis
+## Kasutamise ulatus ja viis
 
 Tehisintellekti kasutati projekti arendusprotsessis tehnilise nõustaja ja abilisena järgmistes etappides:
 
