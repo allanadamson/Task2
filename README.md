@@ -1,9 +1,13 @@
-Projekti pealkiri: Store Inventory Management System
-Kirjeldus
+# Projekti pealkiri
+Store Inventory Management System
+
+
+## Kirjeldus
 
 Rakendus võimaldab vaadata tootenimekirja, otsida tooteid ning lisada uusi tooteid, kasutades TypeScripti ja LocalStorage'it andmete säilitamiseks.
 
-Kasutatud tehnoloogiad
+
+## Kasutatud tehnoloogiad
 
 TypeScript – tüübikindel arendus.
 
@@ -13,4 +17,6 @@ Bootstrap – tundlik disain (Responsive Design).
 
 LocalStorage – andmete püsivus brauseris ilma eraldi andmebaasita.
 
+
+## Juhend projekti avamiseks brauseris
 https://allanadamson.github.io/Task2/src/task2/task2.html
