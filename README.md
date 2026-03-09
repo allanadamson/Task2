@@ -23,7 +23,7 @@ LocalStorage – andmete püsivus brauseris ilma eraldi andmebaasita.
 ## Juhend projekti k'ivitamiseks arvutis
 Projekti käivitamiseks oma arvutis järgi neid samme:
 
-1. Klooni repositoorium: git clone [siia-pane-oma-repo-link]
+1. Klooni repositoorium: git clone [https://github.com/allanadamson/Task2.git]
 2. Paigalda vajalikud sõltvused: npm install
 3. Kompileeri TypeScript JavaScriptiks:
 Kuna brauser ei loe .ts faile otse, tuleb need esmalt kompileerida: npx tsc
@@ -53,18 +53,20 @@ Ava järgmine URL: https://allanadamson.github.io/Task2/src/task2/task2.html
 
 # AI Usage Disclosure
 
-## Tool used: Google Gemini
+## Kasutatud tööriist: Google Gemini
 
-## Extent of usage
-The AI was used as a technical assistant and debugging tool during the development of this project. Specifically, the AI assisted in:
+##Kasutamise ulatus ja viis
 
-Debugging TypeScript type errors: Resolving interface mismatches between the Product model and the data entry forms.
+Tehisintellekti kasutati projekti arendusprotsessis tehnilise nõustaja ja abilisena järgmistes etappides:
 
-Architecture Refactoring: Assistance with transitioning from a Console-based (CLI) application to a Browser-based (GUI) application, ensuring correct file paths in the dist/ directory.
+TypeScripti tüübivigade lahendamine: Abi liideste (Interfaces) ja andmetüüpide vaheliste konfliktide silumisel, eriti toote lisamise vormi ja andmemudelite ühildamisel.
 
-Code Optimization: Refining the renderAll function to ensure clean data flow between the StoreAnalyticsService and the DOM.
+Struktuuri refaktoreerimine: Konsultatsioonid rakenduse üleviimisel konsoolipõhiselt väljundilt veebipõhisele (GUI) liidesele, sealhulgas abi korrektsete failiteede määramisel dist/ kataloogis.
 
-Documentation: Assisting in structuring the README.md file to meet professional standards.
+Koodi optimeerimine: Toetus renderAll funktsiooni täiustamisel, et tagada andmete korrektne liikumine StoreAnalyticsService teenuse ja veebiliidese vahel.
 
-## Human Contribution
-The core business logic, the structure of the data models (Products, Categories, Suppliers), the initial implementation of the StoreAnalyticsService, and the overall UI layout (HTML/Bootstrap) were designed and implemented by the student. All code generated or suggested by the AI was reviewed, manually integrated, and tested by the student to ensure it met the task requirements.
+Dokumentatsioon: Abi projekti README.md faili struktureerimisel ja vormistamisel.
+
+## Üliõpilase panus
+
+Rakenduse põhiloogika, andmemudelite struktuur (tooted, kategooriad, tarnijad), algne StoreAnalyticsService realisatsioon ning kasutajaliidese (HTML/Bootstrap) ülesehitus on üliõpilase loodud. Kogu tehisintellekti poolt pakutud kood ja soovitused on üliõpilase poolt läbi vaadatud, käsitsi integreeritud ja testitud, veendumaks, et lahendus vastab püstitatud ülesandele.
