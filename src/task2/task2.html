@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Analytics - Task 2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        h1 { color: #2c3e50; text-align: center; }
+
+        /* Vormi ja filtrite ala */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Toodete ruudustik */
+        #product-list-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+        /* Toote kaardi stiil (productList.ts jaoks) */
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+        }
+
+        .price-text {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .status-badge {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .status-badge.in_stock { background: #d4edda; color: #155724; }
+        .status-badge.low { background: #fff3cd; color: #856404; }
+        .status-badge.out { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Store Analytics</h1>
+
+        <div id="add-product-container" class="card">
+            <h3>Add Product</h3>
+             </div>
+
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Otsi toote nime järgi...">
+            <select id="sort-select" style="padding: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                <option value="default">Sorteeri:</option>
+                <option value="price-asc">Hind: odavam enne</option>
+                <option value="price-desc">Hind: kallim enne</option>
+            </select>
+        </div>
+
+        <div id="product-list-container">
+            </div>
+    </div>
+
+    <script type="module" src="../../dist/task2/main.js"></script>
+</body>
+</html>
